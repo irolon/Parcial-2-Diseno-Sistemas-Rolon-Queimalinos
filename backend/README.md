@@ -13,12 +13,9 @@ API REST (monolito modular) en **Node.js + Express**, datos en **Supabase/Postgr
 | (Routes) | `*.routes.js` | Define rutas y enchufa middlewares (validación, auth, rol). |
 | (Validation) | `*.validation.js` | Validadores de input del módulo. |
 
-> **Regla:** cada capa solo conoce a la inmediatamente inferior. El Controller nunca toca la DB.
-
 ## Estructura
 
 Organización **por capa**, y dentro de cada capa una **carpeta por módulo**.
-La capa dice el "qué" (controller, service…) y el submódulo dice el "de quién" (auth, …).
 
 ```
 src/
